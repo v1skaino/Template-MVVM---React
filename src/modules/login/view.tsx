@@ -1,7 +1,7 @@
-import { useLogin } from './useLogin';
+import useLoginViewModel from './view.model';
 
-const Login = () => {
-  const { state, handlers } = useLogin();
+const LoginView = () => {
+  const { state, handlers } = useLoginViewModel();
   const { email, password, loading } = state;
   const { setEmail, setPassword, submit } = handlers;
   return (
@@ -11,14 +11,17 @@ const Login = () => {
       <input placeholder="user@email.com" onChange={(event) => setEmail(event.target.value)} value={email} />
       <label>Senha</label>
       <input
+        autoComplete="on"
         placeholder="*****"
         type="password"
         onChange={(event) => setPassword(event.target.value)}
         value={password}
       />
-      <button type="submit">ENTRAR</button>
+      <button disabled={loading} type="submit">
+        ENTRAR
+      </button>
     </form>
   );
 };
 
-export { Login };
+export default LoginView;

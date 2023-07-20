@@ -1,5 +1,4 @@
-import { UserModel } from '../models/user.model';
-import { executeGet } from './client';
+import { client } from './client';
 
 type LoginDTO = {
   email: string;
@@ -7,7 +6,7 @@ type LoginDTO = {
 };
 
 const login = async ({ email, password }: LoginDTO) => {
-  return executeGet<UserModel>('/sessions', { email, password });
+  return client.post('/sign-in', { email, password });
 };
 
 export { login };

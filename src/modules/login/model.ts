@@ -1,6 +1,6 @@
 import { Dispatch, FormEvent, SetStateAction } from 'react';
 
-type UseLoginTypes = {
+type LoginModel = {
   state: {
     email: string;
     password: string;
@@ -13,4 +13,4 @@ type UseLoginTypes = {
   };
 };
 
-export type { UseLoginTypes };
+export type { LoginModel };

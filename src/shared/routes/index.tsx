@@ -1,13 +1,12 @@
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
-import { Home, Login } from '../../modules';
+import LoginView from '../../modules/login/view';
 
 const Router = () => {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="*" element={<Navigate to="/" />} />
-        <Route path="/" element={<Login />} />
-        <Route path="/home" element={<Home />} />
+        <Route path="/" element={<LoginView />} />
       </Routes>
     </BrowserRouter>
   );

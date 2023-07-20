@@ -1,8 +1,8 @@
 import { login } from '@/shared/repositories/auth.repository';
 import { FormEvent, useState } from 'react';
-import { UseLoginTypes } from './types';
+import { LoginModel } from './model';
 
-const useLogin = (): UseLoginTypes => {
+const useLoginViewModel = (): LoginModel => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [loading, setLoading] = useState(false);
@@ -14,7 +14,6 @@ const useLogin = (): UseLoginTypes => {
       const { data } = await login({ email, password });
       console.log(data);
     } catch (error) {
-      console.log(error);
       alert('Something went wrong!');
     } finally {
       setLoading(false);
@@ -27,4 +26,4 @@ const useLogin = (): UseLoginTypes => {
   };
 };
 
-export { useLogin };
+export default useLoginViewModel;

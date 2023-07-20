@@ -1,0 +1,154 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`should render correctly 1`] = `
+<form
+  onSubmit={[MockFunction spy]}
+>
+  <label>
+    Email
+  </label>
+  <input
+    onChange={[Function]}
+    placeholder="user@email.com"
+    value=""
+  />
+  <label>
+    Senha
+  </label>
+  <input
+    onChange={[Function]}
+    placeholder="*****"
+    type="password"
+    value=""
+  />
+  <button
+    disabled={false}
+    type="submit"
+  >
+    ENTRAR
+  </button>
+</form>
+`;
+
+exports[`should render correctly with email 1`] = `
+<form
+  onSubmit={[MockFunction spy]}
+>
+  <label>
+    Email
+  </label>
+  <input
+    onChange={[Function]}
+    placeholder="user@email.com"
+    value="teste@email.com.br"
+  />
+  <label>
+    Senha
+  </label>
+  <input
+    onChange={[Function]}
+    placeholder="*****"
+    type="password"
+    value=""
+  />
+  <button
+    disabled={false}
+    type="submit"
+  >
+    ENTRAR
+  </button>
+</form>
+`;
+
+exports[`should render correctly with password 1`] = `
+<form
+  onSubmit={[MockFunction spy]}
+>
+  <label>
+    Email
+  </label>
+  <input
+    onChange={[Function]}
+    placeholder="user@email.com"
+    value=""
+  />
+  <label>
+    Senha
+  </label>
+  <input
+    onChange={[Function]}
+    placeholder="*****"
+    type="password"
+    value="123"
+  />
+  <button
+    disabled={false}
+    type="submit"
+  >
+    ENTRAR
+  </button>
+</form>
+`;
+
+exports[`should render correctly with password and email 1`] = `
+<form
+  onSubmit={[MockFunction spy]}
+>
+  <label>
+    Email
+  </label>
+  <input
+    onChange={[Function]}
+    placeholder="user@email.com"
+    value="teste@email.com.br"
+  />
+  <label>
+    Senha
+  </label>
+  <input
+    onChange={[Function]}
+    placeholder="*****"
+    type="password"
+    value="123"
+  />
+  <button
+    disabled={false}
+    type="submit"
+  >
+    ENTRAR
+  </button>
+</form>
+`;
+
+exports[`should render while loading 1`] = `
+<form
+  onSubmit={[MockFunction spy]}
+>
+  <p>
+    CARREGANDO...
+  </p>
+  <label>
+    Email
+  </label>
+  <input
+    onChange={[Function]}
+    placeholder="user@email.com"
+    value="teste@email.com.br"
+  />
+  <label>
+    Senha
+  </label>
+  <input
+    onChange={[Function]}
+    placeholder="*****"
+    type="password"
+    value="123"
+  />
+  <button
+    disabled={true}
+    type="submit"
+  >
+    ENTRAR
+  </button>
+</form>
+`;
