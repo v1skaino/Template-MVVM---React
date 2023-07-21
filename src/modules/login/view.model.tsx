@@ -1,4 +1,4 @@
-import { login } from '@/shared/repositories/auth.repository';
+import { login } from '@/shared/repositories/auth/auth.repository';
 import { FormEvent, useState } from 'react';
 import { LoginModel } from './model';
 
