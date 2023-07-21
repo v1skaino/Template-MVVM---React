@@ -16,6 +16,7 @@ exports[`should render correctly 1`] = `
     Senha
   </label>
   <input
+    autoComplete="on"
     onChange={[Function]}
     placeholder="*****"
     type="password"
@@ -46,6 +47,7 @@ exports[`should render correctly with email 1`] = `
     Senha
   </label>
   <input
+    autoComplete="on"
     onChange={[Function]}
     placeholder="*****"
     type="password"
@@ -76,6 +78,7 @@ exports[`should render correctly with password 1`] = `
     Senha
   </label>
   <input
+    autoComplete="on"
     onChange={[Function]}
     placeholder="*****"
     type="password"
@@ -106,6 +109,7 @@ exports[`should render correctly with password and email 1`] = `
     Senha
   </label>
   <input
+    autoComplete="on"
     onChange={[Function]}
     placeholder="*****"
     type="password"
@@ -139,6 +143,7 @@ exports[`should render while loading 1`] = `
     Senha
   </label>
   <input
+    autoComplete="on"
     onChange={[Function]}
     placeholder="*****"
     type="password"
